@@ -31,6 +31,7 @@ All of the above apply to:
 
 - ⚠ The library is now named, installed and imported as "pymc". For example: `pip install pymc`.
 - ⚠ Theano-PyMC has been replaced with Aesara, so all external references to `theano`, `tt`, and `pymc3.theanof` need to be replaced with `aesara`, `at`, and `pymc.aesaraf` (see [4471](https://github.com/pymc-devs/pymc/pull/4471)).
+- `model.recompute_initial_point` has been renamed to `model.compute_initial_point`.
 - `pm.Distribution(...).logp(x)` is now `pm.logp(pm.Distribution(...), x)`.
 - `pm.Distribution(...).logcdf(x)` is now `pm.logcdf(pm.Distribution(...), x)`.
 - `pm.Distribution(...).random(size=x)` is now `pm.draw(pm.Distribution(...), draws=x)`.
